@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Giriş</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifrə</label>
+                <input type="password" id="password" name="password" required>
+                <input type="checkbox" id="show-password"> Şifrəni göstər
+            </div>
+            <a href="../Home/homeindex.html"><button type="submit">Daxil ol</button></a>
+        </form>
+        <div>Qeydiyyatdan keçməmisiniz? <a href="../Register/registerIndex.html">Qeydiyyat</a></div>
+        <div id="message"></div>
+    </div>
+    <script src="loginApp.js"></script>
+</body>
+</html>
