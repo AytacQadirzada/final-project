@@ -19,6 +19,14 @@ login.addEventListener("mouseout", () => {
     login.classList.toggle("login-hover");
 });
 
+// Burger menu toggle
+const burgerMenu = document.querySelector('.burger-menu');
+const menuMobile = document.querySelector('.menu-mobile');
+
+burgerMenu.addEventListener('click', () => {
+    menuMobile.classList.toggle('dis-none');
+});
+
 
 function loadScript() {
     let script = document.createElement('script');

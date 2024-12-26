@@ -6,8 +6,8 @@ document.querySelector('.register-form').addEventListener('submit', function(eve
     let address = document.querySelector('.address').value;
     let finCode = document.querySelector('.fin-code').value;
     let phoneNumber = document.querySelector('.phone-number').value;
-    let password = document.querySelector('.password').value;
-    let confirmPassword = document.querySelector('.confirm-password').value;
+    let password = document.getElementById('password').value;
+    let confirmPassword = document.getElementById('confirm-password').value;
     let message = document.querySelector('.message');
 
     if (password !== confirmPassword) {
@@ -31,8 +31,9 @@ document.querySelector('.register-form').addEventListener('submit', function(eve
     
 });
 
-document.getElementById('show-password').addEventListener('change', () => {
-    let passwordField = document.getElementById('password');
+
+document.getElementById('show-password').addEventListener('change', function() {
+    const passwordField = document.getElementById('password');
     let confirmPasswordField = document.getElementById('confirm-password');
     if (this.checked) {
         passwordField.type = 'text';
@@ -40,5 +41,12 @@ document.getElementById('show-password').addEventListener('change', () => {
     } else {
         passwordField.type = 'password';
         confirmPasswordField.type = 'password';
-    }
+        }
+    });
+    // Burger menu toggle
+const burgerMenu = document.querySelector('.burger-menu');
+const menuMobile = document.querySelector('.menu-mobile');
+
+burgerMenu.addEventListener('click', () => {
+    menuMobile.classList.toggle('dis-none');
 });

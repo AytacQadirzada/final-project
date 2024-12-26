@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="az">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PandaTrail</title>
-    <link rel="icon" type="image/x-icon" href="./photos/logoIcon.png">
+    <link rel="icon" type="image/x-icon" href="./photos/logoicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="./photos/logo.png" alt="Logo23">
+        <div class="header-container-main">
+            <div class="header-container">
+                <div class="burger-menu">
+                    <img src="./photos/burger-menu.png" alt="burger menu">
+                </div>
+                <div class="logo">
+                    <img src="./photos/logoicon.png" style="width: 180px;" alt="Logo23">
+                </div>
+                <div class="menu-login">
+                    <div class="menu">
+                        <a href="Home/homeindex.html" class="menu-text">Əsas Səhifə</a>
+                        <a href="Tariffs/tariffintex.html" class="menu-text">Tariflər</a>
+                        <a href="TariffNetwork/tariffNetworkindex.html" class="menu-text">Xidmət Şəbəkəsi</a>
+                        <a href="Shops/shopsIndex.html" class="menu-text">Mağazalar</a>
+                        <a href="Contact/conactIndex.html" class="menu-text">Əlaqə</a>
+                    </div>
+                    <div class="login">
+                        <a href="Login/loginIndex.html">Giriş</a>
+                    </div>
+                </div>
             </div>
-            <div class="menu-login">
-                <div class="menu">
-                    <a href="Home/homeindex.html" class="menu-text">Əsas Səhifə</a>
-                    <a href="Tariffs/tariffintex.html" class="menu-text">Tariflər</a>
-                    <a href="TariffNetwork/tariffNetworkindex.html" class="menu-text">Xidmət Şəbəkəsi</a>
-                    <a href="Shops/shopsIndex.html" class="menu-text">Mağazalar</a>
-                    <a href="Contact/conactIndex.html" class="menu-text">Əlaqə</a>
-                </div>
-                <div class="login">
-                    <a href="Login/loginIndex.html">Giriş</a>
-                </div>
+            <div class="menu-mobile dis-none">
+                <a href="Home/homeindex.html" class="menu-text">Əsas Səhifə</a>
+                <a href="Tariffs/tariffintex.html" class="menu-text">Tariflər</a>
+                <a href="TariffNetwork/tariffNetworkindex.html" class="menu-text">Xidmət Şəbəkəsi</a>
+                <a href="Shops/shopsIndex.html" class="menu-text">Mağazalar</a>
+                <a href="Contact/conactIndex.html" class="menu-text">Əlaqə</a>
             </div>
         </div>
     </header>
     <main>
         <section class="section-one">
             <div class="section-one-general">
-                <div class="backgraund-main">
-                    <img src="./photos/sectiononebackgraund.jpg" alt="backgraund">
+                <div class="background-main">
+                    <img src="./photos/sectiononebackgraund.jpg" alt="background">
                 </div>
                 <div class="section-container">
+                    <h3 class="slogan-mobile">Sərfəli və
+                        Sürətli Karqo</h3>
                     <div class="calculyator">
                         <p class="calculyator-header">Kalkulyator</p>
                         <div class="calculyator-main">
@@ -130,8 +142,6 @@
                     <button id="turkiye-btn">Türkiyə</button>
                     <button id="daxili-btn">Daxili Kargo</button>
                 </div>
-
-                <div>
                     <div id="abs" class="kargo-content kargo-content-one active">
                         <div class="kargo-container one foreign-cargo">
                             <div>Bakı, Sumqayıt, Xırdalan filialları</div>
@@ -182,7 +192,7 @@
                                 tarifə əlavə olunmuşdur.</p>
                         </div>
                     </div>
-                    <div id="turkiye" class="kargo-content kargo-content-two">
+                    <div id="turkiye" class="kargo-content kargo-content-two dis-none">
                         <div class="kargo-container one foreign-cargo">
                             <div>Bakı, Sumqayıt, Xırdalan filialları</div>
                             <div class="tarif-text">
@@ -232,7 +242,7 @@
                                 tarifə əlavə olunmuşdur.</p>
                         </div>
                     </div>
-                    <div id="daxili" class="kargo-content internal-cargo">
+                    <div id="daxili" class="kargo-content internal-cargo dis-none">
                         <div class="tarif-text">
                             <p>2.00 ₼</p>
                             <p>Bakı və Abşeron ərazisi</p>
@@ -255,7 +265,6 @@
                                 hesablanacaqdır.</p>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
         <section>
@@ -424,11 +433,34 @@
         </div>
         </section>
     </main>
-    <footer>
-        <div class="backgraund-footer"><img src="./photos/footer-backgraund2.png" alt="backgraund"></div>
+    <footer class="footer">
+        <div class="background-footer">
+            <img src="./photos/footer-background2.png" alt="background" class="background-image">
+        </div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section logo-section">
+                    <div class="logo-footer">PandaTrail</div>
+                    <p class="footer-description">PandaTrail PandTail sürətli poçtdaşıma, kuryer və Elektron ticarət şirkətidir.</p>
+                </div>
+                <div class="footer-section">
+                    <ul class="footer-links">
+                        <li><a href="Home/homeindex.html">Əsas Səhifə</a></li>
+                        <li><a href="Tariffs/tariffintex.html">Tariflər</a></li>
+                        <li><a href="TariffNetwork/tariffNetworkindex.html">Xitmət Şəbəkəsi</a></li>
+                        <li><a href="Shops/shopsIndex.html">Mağazalar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <ul class="footer-contact">
+                        <li><a href="mailto:gadirzadaaytac@gmail.com">gadirzadaaytac@gmail.com</a></li>
+                        <li><a href="tel:0773238233">0773238233</a></li>
+                        <li>Bakı şəhəri, Nəsimi rayonu (Kapital Bankın yanı)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-    
     <script src="./app.js"></script>
 </body>
-
 </html>

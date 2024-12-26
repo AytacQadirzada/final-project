@@ -15,3 +15,10 @@ document.getElementById('show-password').addEventListener('change', function() {
         passwordField.type = 'password';
     }
 });
+// Burger menu toggle
+const burgerMenu = document.querySelector('.burger-menu');
+const menuMobile = document.querySelector('.menu-mobile');
+
+burgerMenu.addEventListener('click', () => {
+    menuMobile.classList.toggle('dis-none');
+});
