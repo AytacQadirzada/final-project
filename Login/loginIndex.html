@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş</title>
+    <title>PandaTrail Giriş</title>
     <link rel="stylesheet" href="loginStyle.css">
+    <link rel="icon" type="image/x-icon" href="./loginPhotos/logoIcon.png">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Giriş</h2>
-        <form id="login-form">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./loginPhotos/logoIcon.png" alt="Logo">
             </div>
+            <div class="menu-login">
+                <div class="menu">
+                    <a href="../Home/homeindex.html" class="menu-text">Əsas Səhifə</a>
+                    <a href="../Tariffs/tariffintex.html" class="menu-text">Tariflər</a>
+                    <a href="../TariffNetwork/tariffNetworkindex.html" class="menu-text">Xidmət Şəbəkəsi</a>
+                    <a href="../Shops/shopsIndex.html" class="menu-text">Mağazalar</a>
+                    <a href="../Contact/conactIndex.html" class="menu-text">Əlaqə</a>
+                </div>
+                <div class="login">
+                    <a href="../Login/loginIndex.html">Giriş</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <h2>Giriş</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="email" name="email" required>
+                </div>
             <div class="form-group">
                 <label for="password">Şifrə</label>
                 <input type="password" id="password" name="password" required>
@@ -21,9 +42,10 @@
             </div>
             <a href="../Home/homeindex.html"><button type="submit">Daxil ol</button></a>
         </form>
-        <div>Qeydiyyatdan keçməmisiniz? <a href="../Register/registerIndex.html">Qeydiyyat</a></div>
-        <div id="message"></div>
+        <div class="register">Qeydiyyatdan keçməmisiniz? <a href="../Register/registerIndex.html">Qeydiyyat</a></div>
+        <div class="message"></div>
     </div>
     <script src="loginApp.js"></script>
+</main>
 </body>
 </html>

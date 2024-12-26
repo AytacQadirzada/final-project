@@ -163,6 +163,14 @@ document.getElementById('daxili-btn').addEventListener('click', function() {
     document.getElementById('daxili').classList.add('active');
 });
 
+function loadScript() {
+    let script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB7wCuDhJj4o4cfDXp3CfPy_ioL4nTNuq0&callback=initMap';
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+}
+
 function initMap() {
     // Ünvanlar və koordinatlar
     let locations = [
@@ -178,9 +186,9 @@ function initMap() {
 
     // Xəritə parametrləri
     let map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14, // Zoom dərəcəsi
-        center: {lat: 40.378271, lng: 49.847784}, // Mərkəzi nöqtə
-        mapTypeId: google.maps.MapTypeId.ROADMAP // Xəritə tipi
+        zoom: 14,
+        center: {lat: 40.378271, lng: 49.847784},
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
     let labels = [];
@@ -192,8 +200,8 @@ function initMap() {
             map: map,
             title: location.name,
             icon: {
-                url: 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png', // Default Google Maps marker icon
-                scaledSize: new google.maps.Size(27, 43) // Icon ölçüsü
+                url: 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png',
+                scaledSize: new google.maps.Size(27, 43)
             }
         });
 
@@ -242,7 +250,7 @@ function initMap() {
                     label.div.style.display = 'none';
                 } else {
                     label.div.style.display = 'block';
-                    label.div.style.fontSize = (currentZoom < 14) ? '14px' : '16px'; // Zoom səviyyəsinə görə yazı ölçüsü
+                    label.div.style.fontSize = (currentZoom < 14) ? '14px' : '16px';
                 }
             });
         });
@@ -255,6 +263,7 @@ function initMap() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', loadScript);
 
 document.addEventListener('DOMContentLoaded', function () {
     const locationNames = document.querySelectorAll('.location-name');

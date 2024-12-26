@@ -1,15 +1,14 @@
-document.getElementById('register-form').addEventListener('submit', function(event) {
+document.querySelector('.register-form').addEventListener('submit', function(event) {
     event.preventDefault();
-
-    let firstName = document.getElementById('first-name').value;
-    let lastName = document.getElementById('last-name').value;
-    let email = document.getElementById('email').value;
-    let address = document.getElementById('address').value;
-    let finCode = document.getElementById('fin-code').value;
-    let phoneNumber = document.getElementById('phone-number').value;
-    let password = document.getElementById('password').value;
-    let confirmPassword = document.getElementById('confirm-password').value;
-    let message = document.getElementById('message');
+    let firstName = document.querySelector('.first-name').value;
+    let lastName = document.querySelector('.last-name').value;
+    let email = document.querySelector('.email').value;
+    let address = document.querySelector('.address').value;
+    let finCode = document.querySelector('.fin-code').value;
+    let phoneNumber = document.querySelector('.phone-number').value;
+    let password = document.querySelector('.password').value;
+    let confirmPassword = document.querySelector('.confirm-password').value;
+    let message = document.querySelector('.message');
 
     if (password !== confirmPassword) {
         message.textContent = 'Şifrələr uyğun deyil!';
@@ -18,6 +17,7 @@ document.getElementById('register-form').addEventListener('submit', function(eve
 
     message.style.color = 'green';
     message.textContent = 'Qeydiyyat uğurla tamamlandı!';
+
     if(message.textContent == "Qeydiyyat uğurla tamamlandı!"){
     firstName="";
     lastName="";
@@ -31,7 +31,7 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     
 });
 
-document.getElementById('show-password').addEventListener('change', function() {
+document.getElementById('show-password').addEventListener('change', () => {
     let passwordField = document.getElementById('password');
     let confirmPasswordField = document.getElementById('confirm-password');
     if (this.checked) {

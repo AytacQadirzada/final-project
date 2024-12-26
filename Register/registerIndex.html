@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qeydiyyat</title>
+    <title>PandaTrail Qeydiyyat</title>
     <link rel="stylesheet" href="registerStyle.css">
+    <link rel="icon" type="image/x-icon" href="./registerPhotos/logoIcon.png">
 </head>
 <body>
-    <div class="register-container">
-        <h2>Qeydiyyat</h2>
-        <form id="register-form">
-            <div class="form-group">
-                <label for="first-name">Ad</label>
-                <input type="text" id="first-name" name="first-name" required>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./registerPhotos/logoIcon.png" alt="Logo">
             </div>
-            <div class="form-group">
-                <label for="last-name">Soyad</label>
-                <input type="text" id="last-name" name="last-name" required>
+            <div class="menu-login">
+                <div class="menu">
+                    <a href="../Home/homeindex.html" class="menu-text">Əsas Səhifə</a>
+                    <a href="../Tariffs/tariffintex.html" class="menu-text">Tariflər</a>
+                    <a href="../TariffNetwork/tariffNetworkindex.html" class="menu-text">Xidmət Şəbəkəsi</a>
+                    <a href="../Shops/shopsIndex.html" class="menu-text">Mağazalar</a>
+                    <a href="../Contact/conactIndex.html" class="menu-text">Əlaqə</a>
+                </div>
+                <div class="login">
+                    <a href="../Login/loginIndex.html">Giriş</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="register-container">
+            <h2>Qeydiyyat</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="first-name">Ad</label>
+                    <input type="text" class="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Soyad</label>
+                <input type="text" class="last-name" name="last-name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" clidass="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="address">Ünvan</label>
-                <input type="text" id="address" name="address" required>
+                <input type="text" class="address" name="address" required>
             </div>
             <div class="form-group">
                 <label for="fin-code">FIN Kod</label>
-                <input type="text" id="fin-code" name="fin-code" required>
+                <input type="text" class="fin-code" name="fin-code" required>
             </div>
             <div class="form-group">
                 <label for="phone-number">Telefon Nömrəsi</label>
-                <input type="tel" id="phone-number" name="phone-number" required>
+                <input type="tel" class="phone-number" name="phone-number" required>
             </div>
             <div class="form-group">
                 <label for="password">Şifrə</label>
@@ -43,10 +64,11 @@
                 <label for="confirm-password">Şifrəni təsdiqləyin</label>
                 <input type="password" id="confirm-password" name="confirm-password" required>
             </div>
-            <button type="submit">Qeydiyyatdan keç</button>
+            <button>Qeydiyyatdan keç</button>
         </form>
-        <div id="message"></div>
+        <div class="message"></div>
     </div>
+</main>
     <script src="registerApp.js"></script>
 </body>
 </html>
